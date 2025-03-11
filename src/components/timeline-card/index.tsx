@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { SanitizedEducation, SanitizedExperience } from '../../interfaces/sanitized-config';
 import { skeleton } from '../../utils';
 import './timeline.css';
@@ -70,7 +70,6 @@ const TimelineCard = ({
   };
 
   const { educationItems, experienceItems } = prepareTimelineItems();
-  const maxItems = Math.max(educationItems.length, experienceItems.length);
 
   const handleItemClick = (item: TimelineItem) => {
     if (selectedItem && selectedItem.type === item.type && selectedItem.id === item.id) {
