@@ -1,4 +1,10 @@
-{
+{ "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rohitkhoja/portfolio.git"
+  },
   
   "scripts": {
     "dev": "vite",
